@@ -3,6 +3,7 @@ import ProductList from '../pages/ProductList'
 import Categories from './Categories'
 import Navi from './Navi'
 import { Grid, GridColumn, GridRow } from 'semantic-ui-react'
+import { Route } from 'react-router-dom'
 
 export default function Dashboard() {
     return (
@@ -14,7 +15,9 @@ export default function Dashboard() {
                     </GridColumn>
 
                     <GridColumn width={12}>
-                        <ProductList />
+                        <Route path="/" component={ProductList}/>
+
+                       
                     </GridColumn>
 
                 </GridRow>

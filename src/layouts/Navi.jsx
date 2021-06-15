@@ -1,20 +1,20 @@
-import React,{useState} from 'react'
-import {  Container,  Menu } from 'semantic-ui-react'
+import React, { useState } from 'react'
+import { Container, Menu } from 'semantic-ui-react'
 import CartSummary from './CartSummary'
 import SignedOut from './SignedOut'
 import SignedIn from './SignedIn'
 
 export default function Navi() {
 
-        const [isAuthenticated, setIsAuthenticated] = useState(true)
-        
+    const [isAuthenticated, setIsAuthenticated] = useState(true)
 
-        function handleSignOut() {
-            setIsAuthenticated(false)
-        }
-        function handleSignIn() {
-            setIsAuthenticated(true)
-        }
+
+    function handleSignOut() {
+        setIsAuthenticated(false)
+    }
+    function handleSignIn() {
+        setIsAuthenticated(true)
+    }
 
     return (
         <div>
@@ -25,15 +25,15 @@ export default function Navi() {
                         name='home'
 
                     />
-                    <Menu.Item  
+                    <Menu.Item
                         name='messages'
                     />
 
                     <Menu.Menu position='right'>
-                        <CartSummary/>
-                        {isAuthenticated?<SignedIn signOut={handleSignOut} bisey="1"/>:<SignedOut signIn={handleSignIn} bisey2="2"/>}
-                        
-                        
+                        <CartSummary />
+                        {isAuthenticated ? <SignedIn signOut={handleSignOut} bisey="1" /> : <SignedOut signIn={handleSignIn} bisey2="2" />}
+
+
 
                     </Menu.Menu>
 
