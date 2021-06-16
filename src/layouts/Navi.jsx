@@ -3,6 +3,8 @@ import { Container, Menu } from 'semantic-ui-react'
 import CartSummary from './CartSummary'
 import SignedOut from './SignedOut'
 import SignedIn from './SignedIn'
+import { NavLink } from 'react-router-dom'
+
 
 export default function Navi() {
 
@@ -22,7 +24,7 @@ export default function Navi() {
 
                 <Container>
                     <Menu.Item
-                        name='home'
+                         name='home' as={NavLink} to="/"
 
                     />
                     <Menu.Item
