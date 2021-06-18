@@ -1,7 +1,6 @@
 import React from 'react'
 import ProductList from '../pages/ProductList'
 import Categories from './Categories'
-import Navi from './Navi'
 import { Grid, GridColumn, GridRow } from 'semantic-ui-react'
 import { Route } from 'react-router-dom'
 import ProductDetail from '../pages/ProductDetail'
