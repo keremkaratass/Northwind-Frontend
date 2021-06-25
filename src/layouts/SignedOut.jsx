@@ -9,8 +9,8 @@ export default function SignedOut({signIn}) {
     return (
         <div>
             <Menu.Item>
-                <Button onClick={signIn} inverted color="blue">Giriş Yap</Button>
-                <Button inverted color="red" style={{ marginLeft: "0.5em" }}>Kayıt Ol</Button>
+                <Button onClick={signIn} basic inverted color="blue">Giriş Yap</Button>
+                <Button basic inverted color="red" style={{ marginLeft: "0.5em" }}>Kayıt Ol</Button>
             </Menu.Item>
 
         </div>
